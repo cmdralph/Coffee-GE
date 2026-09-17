@@ -88,7 +88,6 @@ jobs:
         shell: pwsh
         run: >-
           cmake -S . -B build
-          -G "Visual Studio 17 2022"
           -A x64
           -DCOFFEE_BUILD_EXAMPLES=ON
           -DCOFFEE_BUILD_TESTS=ON
@@ -108,6 +107,7 @@ jobs:
           -DCOFFEE_BUILD_VULKAN_MODULE=OFF
           -DCOFFEE_LEAN_SDL=ON
           -DCOFFEE_WARNINGS_AS_ERRORS=ON
+          -DSDL_X11_XTEST=OFF
 
       - name: Build Coffee
         run: cmake --build build --config ${{ matrix.build_type }} --parallel
