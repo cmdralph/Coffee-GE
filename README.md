@@ -1,8 +1,13 @@
-# Coffee 0.5.2
+# Coffee-GE
 
-Coffee is a compact C++20 graphics and game-foundation library for games,
+Coffee Graphics Engine is a compact C++ graphics and game-foundation library for games,
 desktop tools, interfaces, and visualization applications. OpenGL 3.3 Core is
 the built-in renderer; Vulkan is an optional companion module.
+
+### Disclaimer!
+Most of the code seen in this repo is written by AI, but tested and reviewed by myself.
+It's definitely nowhere near production ready and I haven't fully tested it but 
+I like trying to see what I can achieve with these new AIs.
 
 ```cpp
 #include <coffee/coffee.h>
@@ -128,16 +133,7 @@ Coffee stays intentionally focused. Its built-in physics is a small 2D solver,
 not a full 3D physics replacement, and the Vulkan module does not pretend that
 OpenGL objects are portable Vulkan resources.
 
-## Design rules
-
-- Public headers do not include SDL, GLAD, or stb_image.
-- Public types have explicit DLL visibility through `coffee/api.h`.
-- GPU/platform owners are non-copyable and movable.
-- Native access is opt-in and does not enlarge Coffee's stable ABI.
-- Optional features are reported by generated `coffee/config.h`.
-- Source files are listed explicitly so the build remains auditable.
-
+# Docs
 Start with [`docs/GETTING_STARTED.md`](docs/GETTING_STARTED.md), then read
 [`docs/BUILDING.md`](docs/BUILDING.md),
-[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), and
-[`docs/MIGRATING_0_5.md`](docs/MIGRATING_0_5.md) before distributing a release.
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
