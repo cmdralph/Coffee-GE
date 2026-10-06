@@ -1,5 +1,8 @@
 # Coffee-GE
 
+## Important notice!
+I am moving this project to my new repo at [spfxd-engine](https://github.com/cmdralph/spfxd-engine), alongside my upcoming project lib-spfxd, which will be a fun little std implementation of libc.
+
 Coffee Graphics Engine is a compact C++ graphics and game-foundation library for games,
 desktop tools, interfaces, and visualization applications. OpenGL 3.3 Core is
 the built-in renderer; Vulkan is an optional companion module.
